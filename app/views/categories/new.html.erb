@@ -1,0 +1,17 @@
+<%= form_with model: @category, url: categories_path, method: :post do |f| %>
+
+  <div>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :icon %><br />
+    <%= f.text_field :icon %>
+  </div>
+
+  <%# <%= f.hidden_field :user_id, value: current_user.id %> %>
+
+  <%= f.submit :submit %><br />
+
+<% end %>

@@ -1,0 +1,26 @@
+<h1>Categories page</h1>
+<% @categories.each do |cat|%>
+    <%total_amount = 0%>
+
+    <% @category_expenses.each do |ce|%>
+        <%if ce.category_id == cat.id%>
+            <% total_amount += ce.expense.amount%>
+        <% end %>
+    <% end %>
+
+    <div>
+
+        <%# image src to be fixed  %>
+        <%# <%= image_tag "#{cat.icon}"%> %>
+        <img src=<%cat.icon%> />
+        <%= link_to cat.name, category_expenses_path(cat.id)%>
+
+        <%= total_amount%>
+    </div>
+
+
+<% end %>
+
+<button>
+    <%= link_to "Add new Category", new_category_path %>
+</button>
