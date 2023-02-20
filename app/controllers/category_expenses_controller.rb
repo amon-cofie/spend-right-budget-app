@@ -1,0 +1,2 @@
+class CategoryExpensesController < ApplicationController
+end
