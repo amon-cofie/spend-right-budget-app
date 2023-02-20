@@ -32,3 +32,4 @@
 
 # Database configurations
 /config/database.yml
+node_modules
