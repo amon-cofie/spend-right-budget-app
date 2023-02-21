@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+
+ :root {
+    --main: #3778c2;
+    --secondary: #5fb523;
+    --text: #434b54; 
+ }
+
+ .flex {
+    display: flex;
+ }
+
+ .flex_column {
+    display: flex;
+    flex-direction: column;
+ }

@@ -1,2 +1,0 @@
-class CategoryExpensesController < ApplicationController
-end

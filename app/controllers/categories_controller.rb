@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user!
   def index
     @categories = Category.where(user: current_user)
     @expenses = Expense.where(user: current_user)
