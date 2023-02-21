@@ -1,0 +1,15 @@
+<%= form_with model: @expense, url: category_expenses_path, method: :post do |f| %>
+
+  <div>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :amount %><br />
+    <%= f.number_field :amount %>
+  </div>
+
+  <%= f.submit :submit %><br />
+
+<% end %>

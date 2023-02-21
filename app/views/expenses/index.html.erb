@@ -1,0 +1,14 @@
+<h1>Transactions</h1>
+
+Total expenses in this category: <%= @total_amount %>
+
+<% @expenses.each do |exp|%>
+    <div>
+        <%= exp.expense.name%>
+        <%= exp.expense.amount%>
+    </div>
+<% end %>
+
+<button>
+    <%= link_to "Add new transaction", new_category_expense_path(@category)%>
+</button>
