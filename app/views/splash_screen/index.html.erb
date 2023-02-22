@@ -10,6 +10,9 @@
                 <%= link_to "LOG IN", user_session_path, class: "log_in_link fill_container" %>
             </button>
 
+        <% else %>
+            <%= link_to "TRANSACTION CATEGORIES", categories_path, class: "center_horizontal home_to_transactions"%>
+
         <% end %>
         
         <%= link_to "SIGN UP", new_user_registration_path, class: "sign_up_link center_horizontal"%>

@@ -27,6 +27,6 @@
   color: #fff;
 }
 
-.sign_up_link {
+.sign_up_link, .home_to_transactions {
   color: var(--text);
 }
