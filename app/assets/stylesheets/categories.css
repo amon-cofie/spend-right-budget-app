@@ -1,0 +1,54 @@
+.cat_container {
+  justify-content: space-between;
+  width: 90%;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0.5px 0.5px 6px;
+  min-height: 6rem;
+}
+
+.categories {
+  background-color: rgb(250, 250, 250);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 0.5rem;
+  overflow-y: scroll;
+}
+
+.cat_details_image {
+  justify-content: center;
+  align-items: center;
+}
+
+.cat_details_main {
+  gap: 0.5rem;
+  flex: 4;
+}
+
+.cat_amount {
+  flex: 1;
+}
+
+.cat_details_secondary {
+  justify-content: space-between;
+}
+
+.add_new_btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  border: none;
+  background-color: var(--secondary);
+}
+
+.add_new_button_inner {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1.3rem 6.7rem;
+  border-radius: 5px;
+}
+
+.submit_new_btn {
+  background-color: var(--secondary);
+}

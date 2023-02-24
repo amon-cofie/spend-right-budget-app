@@ -1,14 +1,18 @@
-<h1>Transactions</h1>
+<%= render partial: "partials/login_sign_up", locals: {title: "TRANSACTIONS", no_auth: true}%>
 
-Total expenses in this category: <%= @total_amount %>
+<div class="total_expenses flex general_text">
+    <span>Total amount spent in this category:</span> <span>$<%= @total_amount %></span>
+</div>
 
-<% @expenses.each do |exp|%>
-    <div>
-        <%= exp.expense.name%>
-        <%= exp.expense.amount%>
-    </div>
-<% end %>
+<div class="expenses_container flex_column">
+    <% @expenses.each do |exp|%>
+        <div class="expense_container flex center_horizontal general_text">
+            <span class="expense_name"><%= exp.expense.name%></span>
+            <span class="expense_amount">$<%= exp.expense.amount%></span>
+        </div>
+    <% end %>
+</div>
 
-<button>
-    <%= link_to "Add new transaction", new_category_expense_path(@category)%>
+<button type="button" class="add_new_btn">
+    <%= link_to "Add new transaction", new_category_expense_path(@category), class: "add_new_button_inner general_text" %>
 </button>

@@ -14,18 +14,70 @@
  *= require_self
  */
 
+body {
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+}
 
- :root {
-    --main: #3778c2;
-    --secondary: #5fb523;
-    --text: #434b54; 
- }
+:root {
+  --main: #3778c2;
+  --secondary: #5fb523;
+  --text: #434b54;
+}
 
- .flex {
-    display: flex;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
 
- .flex_column {
-    display: flex;
-    flex-direction: column;
- }
+.flex {
+  display: flex;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.general_text {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.center_horizontal {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fill_container {
+  width: 100%;
+  height: 100%;
+}
+
+.header_title {
+  color: #fff;
+}
+
+.form_action input {
+  border: none;
+  color: #fff;
+  background-color: var(--main);
+}
+
+header {
+  background-color: var(--main);
+}
+
+.back_button {
+  color: #fff;
+}

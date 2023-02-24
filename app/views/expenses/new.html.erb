@@ -1,15 +1,18 @@
+<%= render partial: "partials/login_sign_up", locals: {title: "NEW TRANSACTION", no_auth: true}%>
+
 <%= form_with model: @expense, url: category_expenses_path, method: :post do |f| %>
-
-  <div>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <div class="flex_column fill_container login_form_container">
+    <div class="login_field">
+      <%= f.text_field :name, placeholder: "Transaction name", class: "general_text" %>
+    </div>
+    <hr />
+    <div class="login_field">
+      <%= f.number_field :amount, placeholder: "Transaction amount", class: "general_text"  %>
+    </div>
   </div>
 
-  <div>
-    <%= f.label :amount %><br />
-    <%= f.number_field :amount %>
-  </div>
-
-  <%= f.submit :submit %><br />
+  <button type="button" class="add_new_btn">
+    <%= f.submit "SAVE", class: "add_new_button_inner general_text submit_new_btn"  %>
+  </button>
 
 <% end %>

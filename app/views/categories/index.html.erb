@@ -1,26 +1,34 @@
-<h1>Categories page</h1>
-<% @categories.each do |cat|%>
-    <%total_amount = 0%>
 
-    <% @category_expenses.each do |ce|%>
-        <%if ce.category_id == cat.id%>
-            <% total_amount += ce.expense.amount%>
+<%= render partial: "partials/login_sign_up", locals: {title: "CATEGORIES", no_auth: true}%>
+<div class="categories flex_column">
+    <% @categories.each do |cat|%>
+        <%total_amount = 0%>
+
+        <% @category_expenses.each do |ce|%>
+            <%if ce.category_id == cat.id%>
+                <% total_amount += ce.expense.amount%>
+            <% end %>
         <% end %>
+
+        <div class="cat_container center_horizontal flex">
+            <div class="cat_details_main flex">
+                <div class="cat_details_image flex">
+                    <img src="<%= cat.icon %>">
+                </div>
+                <div class="cat_details_secondary flex_column">
+                    <%= link_to cat.name, category_expenses_path(cat.id)%>
+                    <%= cat.created_at.strftime("%B %d %Y") %>
+
+                </div>
+            </div>
+            <div class="cat_amount flex">
+                <strong>$ <%= total_amount%></strong>
+            </div>
+        </div>
+
+
     <% end %>
-
-    <div>
-
-        <%# image src to be fixed  %>
-        <%# <%= image_tag "#{cat.icon}"%> %>
-        <img src=<%cat.icon%> />
-        <%= link_to cat.name, category_expenses_path(cat.id)%>
-
-        <%= total_amount%>
-    </div>
-
-
-<% end %>
-
-<button>
-    <%= link_to "Add new Category", new_category_path %>
+</div>
+<button type="button" class="add_new_btn">
+    <%= link_to "Add new Category", new_category_path, class: "add_new_button_inner general_text" %>
 </button>

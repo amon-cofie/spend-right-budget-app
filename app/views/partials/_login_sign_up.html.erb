@@ -1,0 +1,38 @@
+<div class="login_sign_up_header flex">
+    <div>
+        <% if title == "TRANSACTIONS"%>
+            <%= link_to "BACK", categories_path, class: "back_button general_text" %>
+        <% elsif title == "CATEGORIES"%>
+            <%= link_to "BACK", root_path, class: "back_button general_text" %>
+        <% else %>
+            <%= link_to "BACK", :back, class: "back_button general_text" %>
+        <% end %>
+    </div>
+
+    <div class="headline header_title">
+        <%= title%>    
+    </div>
+
+    <% if no_auth%>
+        <div> <%= button_to "LOGOUT", destroy_user_session_path, method: :delete, class:"log_btn general_text" %></div>
+    
+    <% else %>
+
+        <div>
+            <%if login%>
+                <div class="form_action">
+                    <%= form.submit "LOGIN" %>
+                </div>
+            <%else%>
+                <div class="form_action">
+                    <%= form.submit "SIGN UP" %>
+                </div>
+            <%end%>
+
+        </div>
+
+    <% end %>
+
+
+
+</div>
