@@ -32,13 +32,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Spend Right Budget App] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+**Spend Right** is a full stack ruby on rails web application on a postgreSQL database that is built to manage your finances by grouping your expenses or transactions into categories and helping you visualize how much your are spending and where you are spending the most amount of money.
 
-**[your_project__name]** is a...
-
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with">Ruby on Rails</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -47,14 +45,15 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>HTML</li>
+    <li>CSS</li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://render.com/">Render</a></li>
   </ul>
 </details>
 
@@ -74,11 +73,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Spash screen to intoduce user to app**
+- **Total amount of transactions in each category**
+- **Ability to add new category**
+- **Ability to add new transaction to a category**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +90,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
@@ -106,83 +104,75 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
+- Install Ruby
+- Install node
+- Install npm 
+- A code editior
+- A web browser (Chrome, preferrably)
 
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd [my-folder]
+  git clone git@github.com:amon-cofie/spend-right-budget-app.git
+  cd spend-right-budget-app
 ```
---->
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
+
 
 ```sh
-  cd my-project
-  gem install
+  bundle install
+  rails db:create
+  rails db:migrate
 ```
---->
+
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   rails server
 ```
---->
+
 
 ### Run tests
 
+Tests are written with RSpec
+
 To run tests, run the following command:
 
-<!--
-Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  rspec spec
 ```
---->
+
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
+
 
 ```sh
-
+  render
 ```
- -->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,21 +183,15 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **David Amon-Cofie**
 
-👤 **Author1**
+- GitHub: [@amon-cofie](https://github.com/amon-cofie)
+- Twitter: [@amon_cofie](https://twitter.com/amon_cofie)
+- LinkedIn: [David Amon-Cofie](https://www.linkedin.com/in/david-amon-cofie-2389ab241/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,11 +204,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **View details of each transaction**
+- [ ] **Futher organize the transactions by time created**
+- [ ] **Add statistics with graphs and charts**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,9 +234,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, a star would be much appreciated
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -267,30 +247,9 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank everyone who gave me inspiration and insight into the look and feel of this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
