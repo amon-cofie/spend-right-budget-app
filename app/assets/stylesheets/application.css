@@ -14,11 +14,10 @@
  *= require_self
  */
 
-  body {
-    height: 100vh;  
-    background-color: rgb(250, 250, 250);
-
-  }
+body {
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+}
 
 :root {
   --main: #3778c2;
@@ -69,10 +68,10 @@
   color: #fff;
 }
 
-.form_action input{
+.form_action input {
   border: none;
   color: #fff;
-  background-color: var(--main); 
+  background-color: var(--main);
 }
 
 header {

@@ -1,31 +1,29 @@
 .total_expenses {
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0.5px 0.5px 6px ;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0.5px 0.5px 6px;
 }
 
 .expenses_container {
-    overflow-y: scroll;
-    gap: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  overflow-y: scroll;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .expense_container {
-    
-    width: 90%;
-    box-shadow: 0.5px 0.5px 6px ;
-    
-    background-color: #fff;
-    justify-content: space-between;
-    padding: 1rem;
+  width: 90%;
+  box-shadow: 0.5px 0.5px 6px;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .expense_name {
-    flex: 5;
+  flex: 5;
 }
 
 .expense_amount {
-    flex: 1;
+  flex: 1;
 }
