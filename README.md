@@ -90,7 +90,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://spend-right.onrender.com)
 
 ![image](https://user-images.githubusercontent.com/107795045/221205973-786b7a1f-0300-4f87-8cc8-133d1ac666f9.png) ![image](https://user-images.githubusercontent.com/107795045/221206259-97d0af93-95d0-4142-8989-b3e51b25b7d3.png) ![image](https://user-images.githubusercontent.com/107795045/221206553-d6de17ad-da18-49bd-89ae-2c3fc31b5cfc.png)
 ![image](https://user-images.githubusercontent.com/107795045/221207104-b5ec97c4-5882-4b74-8d9e-f9edd19691c4.png) ![image](https://user-images.githubusercontent.com/107795045/221207526-6ab186bd-902b-4300-bb23-510955fa254d.png)
