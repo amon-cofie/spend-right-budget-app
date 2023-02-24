@@ -31,5 +31,5 @@
 /config/master.key
 
 # Database configurations
-/config/database.yml
+
 node_modules
