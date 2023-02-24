@@ -22,7 +22,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 
@@ -92,6 +91,11 @@
 
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
+
+![image](https://user-images.githubusercontent.com/107795045/221205973-786b7a1f-0300-4f87-8cc8-133d1ac666f9.png) ![image](https://user-images.githubusercontent.com/107795045/221206259-97d0af93-95d0-4142-8989-b3e51b25b7d3.png) ![image](https://user-images.githubusercontent.com/107795045/221206553-d6de17ad-da18-49bd-89ae-2c3fc31b5cfc.png)
+![image](https://user-images.githubusercontent.com/107795045/221207104-b5ec97c4-5882-4b74-8d9e-f9edd19691c4.png) ![image](https://user-images.githubusercontent.com/107795045/221207526-6ab186bd-902b-4300-bb23-510955fa254d.png)
+![image](https://user-images.githubusercontent.com/107795045/221207670-3fe1175b-1104-48f4-99b3-076b4d530ce2.png) ![image](https://user-images.githubusercontent.com/107795045/221207781-2da6ad3a-74fa-48f2-a716-71835033fab1.png)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -260,7 +264,7 @@ I would like to thank everyone who gave me inspiration and insight into the look
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 
 
