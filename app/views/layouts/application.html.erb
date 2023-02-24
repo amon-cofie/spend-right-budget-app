@@ -11,19 +11,6 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul class="li-login">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Categories", categories_path %></li>
-          <% if user_signed_in? %>
-            <li><%= button_to "LogOut", destroy_user_session_path, method: :delete, class:"log-btn" %></li>
-          <% else %>
-            <li><%= link_to "Login", new_user_session_path, class:"log-btn" %></li>
-          <% end %>
-        </ul>
-      </nav>
-    </header>
     <%= yield %>
   </body>
 </html>

@@ -14,6 +14,12 @@
  *= require_self
  */
 
+  body {
+    height: 100vh;  
+    background-color: rgb(250, 250, 250);
+
+  }
+
 :root {
   --main: #3778c2;
   --secondary: #5fb523;
@@ -57,4 +63,22 @@
 .fill_container {
   width: 100%;
   height: 100%;
+}
+
+.header_title {
+  color: #fff;
+}
+
+.form_action input{
+  border: none;
+  color: #fff;
+  background-color: var(--main); 
+}
+
+header {
+  background-color: var(--main);
+}
+
+.back_button {
+  color: #fff;
 }
