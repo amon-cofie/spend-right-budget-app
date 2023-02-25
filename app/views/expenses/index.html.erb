@@ -6,8 +6,12 @@
 
 <div class="expenses_container flex_column">
     <% @expenses.each do |exp|%>
+        
         <div class="expense_container flex center_horizontal general_text">
-            <span class="expense_name"><%= exp.expense.name%></span>
+            <div class="expense_name"> 
+                <div class="expense_name"><%= exp.expense.name%></div>
+                <div class="expense_name">Created on: <em><%= exp.expense.created_at.strftime("%B %d %Y") %></em></div>
+            </div>
             <span class="expense_amount">$<%= exp.expense.amount%></span>
         </div>
     <% end %>
