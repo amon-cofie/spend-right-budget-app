@@ -1,0 +1,19 @@
+<div class="login_form_main">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+    <%= render partial: "partials/login_sign_up", locals: {title: "LOGIN", login: true, form: f, no_auth: false}%>
+    <div class="flex_column fill_container login_form_container">
+      <div class="login_field">
+        <%= f.email_field :email, placeholder: "Email", class: "general_text" %>
+      </div>
+      <hr/>
+      <div class="login_field">
+        <%= f.password_field :password, placeholder: "Password", class: "general_text" %>
+      </div>
+    </div>
+    
+    <div class="shared_links flex_column fill_container">
+      <%= render "devise/shared/links" %>
+    </div>
+  <% end %>
+</div>

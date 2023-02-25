@@ -1,0 +1,35 @@
+
+<div class="login_form_main">
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <%= render partial: "partials/login_sign_up", locals: {title: "REGISTER", login: false, form: f, no_auth: false}%>
+  <div class="flex_column fill_container login_form_container">
+    <div class="login_field">
+      <%= f.text_field :name, placeholder: "Full name"%>
+    </div>
+    <hr/>
+    <div class="login_field">
+      <%= f.email_field :email, placeholder: "Email" %>
+    </div>
+    <hr/>
+
+    <div class="login_field">
+      <% if @minimum_password_length %>
+      <em><%= @minimum_password_length %> characters minimum</em>
+      <% end %><br />
+      <%= f.password_field :password, placeholder: "Password"%>
+    </div>
+    <hr/>
+
+    <div class="login_field">
+      <%= f.password_field :password_confirmation, placeholder: "Confirm password"%>
+    </div>
+  </div>
+  <div class="shared_links flex_column fill_container">
+    <%= render "devise/shared/links" %>
+  </div>
+  
+<% end %>
+
+
+<div class="login_form_main">

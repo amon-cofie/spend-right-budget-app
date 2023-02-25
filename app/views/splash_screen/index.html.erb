@@ -1,0 +1,21 @@
+<div class="flex_column splash">
+    
+    <h1 class="flex_column headline">Spend Right</h1>
+
+    <div class="splash_buttons flex_column">
+
+        <% unless user_signed_in? %>
+            
+            <button type="button" class="log_in_button center_horizontal">
+                <%= link_to "LOG IN", user_session_path, class: "log_in_link fill_container" %>
+            </button>
+            
+            <%= link_to "SIGN UP", new_user_registration_path, class: "sign_up_link center_horizontal"%>
+
+        <% else %>
+            <%= link_to "TRANSACTION CATEGORIES", categories_path, class: "center_horizontal home_to_transactions"%>
+
+        <% end %>
+        
+    </div>
+</div>

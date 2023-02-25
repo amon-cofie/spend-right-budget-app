@@ -1,0 +1,19 @@
+<%= render partial: "partials/login_sign_up", locals: {title: "NEW CATEGORY", no_auth: true}%>
+
+<%= form_with model: @category, url: categories_path, method: :post do |f| %>
+  <div class="flex_column fill_container login_form_container">
+
+    <div class="login_field">
+      <%= f.text_field :name, placeholder: "Category name", class: "general_text" %>
+    </div>
+    <hr/>
+
+    <div class="login_field">
+      <%= f.text_field :icon,  placeholder: "Category icon", class: "general_text" %>
+    </div>
+  </div>
+
+  <button type="button" class="add_new_btn">
+    <%= f.submit "SAVE", class: "add_new_button_inner general_text submit_new_btn"  %>
+  </button>
+<% end %>
